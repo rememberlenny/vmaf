@@ -230,7 +230,7 @@ int compute_vmaf(double* vmaf_score, char* fmt, int width, int height,
 
     const enum VmafOutputFormat output_fmt = log_fmt_map(log_fmt);
     if (output_fmt) {
-        err = vmaf_write_output(vmaf, logpath, output_fmt);
+        err = vmaf_write_output(vmaf, log_path, output_fmt);
         if (err) {
             fprintf(stderr, "could not write output: %s\n", log_path);
             goto free_data;
