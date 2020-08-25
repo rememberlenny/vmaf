@@ -16,8 +16,8 @@
  *
  */
 
-#ifndef LIBVMAF_H_
-#define LIBVMAF_H_
+#ifndef COMPUTE_VMAF_H_
+#define COMPUTE_VMAF_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -71,4 +71,4 @@ int compute_vmaf(double* vmaf_score, char* fmt, int width, int height, int (*rea
 }
 #endif
 
-#endif /* _LIBVMAF_H */
+#endif /* COMPUTE_VMAF_H */
