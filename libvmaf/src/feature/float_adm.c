@@ -97,16 +97,16 @@ static int extract(VmafFeatureExtractor *fex,
                                         "'VMAF_feature_adm2_score'",
                                         score, index);
     err |= vmaf_feature_collector_append(feature_collector,
-                                         "adm_scale0",
+                                         "'VMAF_feature_adm_scale0_score'",
                                          scores[0] / scores[1], index);
     err |= vmaf_feature_collector_append(feature_collector,
-                                         "adm_scale1",
+                                         "'VMAF_feature_adm_scale1_score'",
                                          scores[2] / scores[3], index);
     err |= vmaf_feature_collector_append(feature_collector,
-                                         "adm_scale2",
+                                         "'VMAF_feature_adm_scale2_score'",
                                          scores[4] / scores[5], index);
     err |= vmaf_feature_collector_append(feature_collector,
-                                         "adm_scale3",
+                                         "'VMAF_feature_adm_scale3_score'",
                                          scores[6] / scores[7], index);
 
     if (s->debug) {
