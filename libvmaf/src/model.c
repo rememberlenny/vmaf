@@ -75,6 +75,7 @@ free_path:
     free(m->path);
 free_m:
     free(m);
+    *model = NULL;
 fail:
     return -ENOMEM;
 }
